@@ -1,11 +1,5 @@
 {
-  "extends": "astro/tsconfigs/strictest",
-  "compilerOptions": {
-    "lib": ["DOM", "ESNext"],
-    "jsx": "preserve",
-    "jsxImportSource": "solid-js",
-    "skipLibCheck": true,
-    "allowJs": true
-  },
-  "include": ["src", "api", "test", "*.ts"]
+  "extends": "astro/tsconfigs/strict",
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist"]
 }
