@@ -2,5 +2,9 @@ import { useState } from 'react'
 
 export default () => {
   const [counter, setCounter] = useState(0)
+  return (
+    <button class="button" onClick={() => setCounter(counter + 1)}>
+      {`Clicked ${counter} times`}
+    </button>
+  )
 }
-
