@@ -1,10 +1,10 @@
-import { useState } from 'react'
+import confetti from 'canvas-confetti'
 
-export default () => {
-  const [counter, setCounter] = useState(0)
-  return (
-    <button onClick={() => setCounter(counter + 1)}>
-      {`Clicked ${counter} times`}
-    </button>
-  )
-}
+export default props => (
+  <button
+    onClick={() => confetti()}
+    className='appearance-none py-2 px-4 bg-purple-500 text-white font-semibold rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-75'
+  >
+    { props.children }
+  </button>
+)
