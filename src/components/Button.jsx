@@ -1,5 +1,3 @@
-import confetti from 'canvas-confetti'
-
 export default props => (
   <button
     onClick={() => confetti()}
